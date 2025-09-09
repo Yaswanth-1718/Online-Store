@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: white; }
+    .reg-box {
+      max-width: 700px;
+      margin: auto;
+      margin-top: 40px;
+      padding: 15px;
+      background: #fff;
+      border: 2px solid white;
+    }
+    h2 {
+      background: black;
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      margin-bottom: 20px;
+    }
+    table { width: 100%; }
+    td { padding: 8px; }
+  </style>
+</head>
+<body>
+
+<div class="reg-box">
+  <h2>ONLINE REGISTRATION</h2>
+  <form>
+    <table border="1" class="table table-bordered">
+      <tr><td>First Name</td><td><input type="text" class="form-control"></td></tr>
+      <tr><td>Last Name</td><td><input type="text" class="form-control"></td></tr>
+      <tr><td>Password</td><td><input type="password" class="form-control"></td></tr>
+      <tr><td>Confirm Password</td><td><input type="password" class="form-control"></td></tr>
+      <tr><td>Gender</td><td>
+        <input type="radio" name="sex"> Male
+        <input type="radio" name="sex"> Female
+      </td></tr>
+      <tr><td>Email</td><td><input type="email" class="form-control"></td></tr>
+      <tr><td>Phone</td><td><input type="text" class="form-control"></td></tr>
+      <tr><td>Address</td><td><textarea class="form-control"></textarea></td></tr>
+      <tr><td colspan="2" class="text-center">
+        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="reset" class="btn btn-danger">Reset</button>
+      </td></tr>
+    </table>
+  </form>
+</div>
+
+</body>
+</html>

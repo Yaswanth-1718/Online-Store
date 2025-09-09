@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart Page</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+    }
+    h2 {
+      text-align: center;
+      color: black;
+    }
+    table {
+      width: 70%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr.table-info {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+    .btn {
+      padding: 8px 20px;
+      margin: 10px 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-success {
+      background-color: green;
+      color: white;
+    }
+    .btn-danger {
+      background-color: red;
+      color: white;
+    }
+    .text-center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Cart Page</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Java</td>
+        <td>$35.5</td>
+        <td>2</td>
+        <td>$70</td>
+      </tr>
+      <tr>
+        <td>C++</td>
+        <td>$40.5</td>
+        <td>1</td>
+        <td>$40.5</td>
+      </tr>
+      <tr class="table-info">
+        <td colspan="3" class="text-end">Total Amount:</td>
+        <td>$110.5</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="text-center">
+    <button class="btn btn-success">Proceed to Checkout</button>
+    <button class="btn btn-danger">Clear Cart</button>
+  </div>
+
+</body>
+</html>
